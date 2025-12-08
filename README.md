@@ -1,1 +1,1 @@
-# Anwendungsfelder-der-Business-Analytics
+# Anwendungsfelder der Business Analytics
