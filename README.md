@@ -4,5 +4,5 @@
 
 # Forschungsfrage  
 
-„Welche Umweltkennzahlen zeigen bei E.ON, unter Berücksichtigung von Zielabweichung, Trend und regulatorischem Risiko,   
-den höchsten prioritären Handlungsbedarf zur Erreichung der Klimaziele?“
+Welche Umweltkennzahlen entlang von Energie- und Ressourcenverbrauch (Strom, Wärme, Wasser) zeigen bei E.ON,  
+unter Berücksichtigung von Effizienz, Zielabweichung und regulatorischem Risiko, den höchsten Handlungsbedarf zur Erreichung der Klimaziele?
