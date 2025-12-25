@@ -4,5 +4,6 @@
 
 # Forschungsfrage  
 
-Welche Umweltkennzahlen entlang von Energie- und Ressourcenverbrauch (Strom, Wärme, Wasser) zeigen bei E.ON,  
-unter Berücksichtigung von Effizienz, Zielabweichung und regulatorischem Risiko, den höchsten Handlungsbedarf zur Erreichung der Klimaziele?
+Inwieweit spiegelt die Entwicklung der ökologischen Effizienz (Energie- und Ressourcenverbrauch im Verhältnis zum Umsatz)  
+bei E.ON seit 2002 eine konsistente Transformation zum klimaneutralen Unternehmen wider, und welchen Einfluss hat die zunehmende   
+Vollständigkeit der Berichterstattung auf die Bewertung regulatorischer Risiken und der Glaubwürdigkeit im Kontext von Greenwashing-Kontroversen?  
