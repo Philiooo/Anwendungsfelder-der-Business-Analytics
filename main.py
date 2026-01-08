@@ -72,6 +72,101 @@ df_all["Outlier"] = ~df_all["Wert_num"].between(q1 - 1.5*iqr, q3 + 1.5*iqr)
 outliers = df_all[df_all["Outlier"] == True]
 
 
+# Filtern der bestimmten Attribute
+target_attributes = {
+    # Energie
+    "Total Energy Use / Million in Revenue $": "Energie",
+    "Energy Use Total": "Energie",
+    "Electricity Purchased": "Energie",
+    "Electricity Produced": "Energie",
+    "Renewable Energy Use Ratio": "Energie",
+    "Total Renewable Energy": "Energie",
+    "Renewable Energy Purchased": "Energie",
+    "Renewable Energy Produced": "Energie",
+    "Renewable Energy Use": "Energie",
+
+    # Wasser
+    "Total Water Use / Million in Revenue $": "Wasser",
+    "Water Withdrawal Total": "Wasser",
+    "Water Recycled": "Wasser",
+    "Water Incidents": "Wasser",
+    "Water Use Target": "Wasser",
+    "Water Withdrawal in Stressed Regions": "Wasser",
+    "Water Discharged": "Wasser",
+
+    # Abfall
+    "Accidental Spills To Revenues USD in million": "Abfall",
+    "Accidental Spills": "Abfall",
+    "Waste Recycling Ratio": "Abfall",
+    "Hazardous Waste": "Abfall",
+    "Waste Total": "Abfall",
+    "Total Waste / Million in Revenue $": "Abfall",
+    "Waste Reduction Initiatives": "Abfall",
+    "Waste Recycled To Total Waste": "Abfall",
+
+    # Emissionen
+    "Internal Carbon Pricing": "Emissionen",
+    "Emission Reduction Target Percentage": "Emissionen",
+    "Emission Reduction Target Year": "Emissionen",
+    "Estimated CO2 Equivalents Emission Total": "Emissionen",
+    "Total CO2 Emissions / Million in Revenue $": "Emissionen",
+    "CO2 Equivalent Emissions Total": "Emissionen",
+    "CO2 Equivalent Emissions Direct, Scope 1": "Emissionen",
+    "CO2 Equivalent Emissions Indirect, Scope 2": "Emissionen",
+    "CO2 Equivalent Emissions Indirect, Scope 3": "Emissionen",
+
+    # Target
+    "Targets Resource Use": "Target",
+    "Resource Reduction Targets": "Target",
+    "Targets Water Efficiency": "Target",
+    "Targets Energy Efficiency": "Target",
+    "Water Use Target": "Target",
+    "Water Stressed Targets": "Target",
+    "Targets Emissions": "Target",
+    "Emission Reduction Target Percentage": "Target",
+    "Emission Reduction Target Year": "Target",
+    "Emissions Target Type": "Target",
+    "Emissions Target Annual Reduction": "Target",
+    "Reduction Target, GHG Emissions Scope 1,2": "Target",
+    "Reduction Target, GHG Emissions Scope 1,2,3": "Target",
+    "Reduction Target, GHG Emissions Intensity Scope 1,2": "Target",
+    "Reduction Target, GHG Emissions Intensity Scope 1,2,3": "Target",
+    "Targets Waste": "Target",
+    "Targets Pollution": "Target",
+    "Biodiversity Targets": "Target",
+
+    #Policy
+    "Policy Resource Efficiency": "Policy",
+    "Resource Reduction Policy": "Policy",
+    "Policy Water Efficiency": "Policy",
+    "Policy Energy Efficiency": "Policy",
+    "Policy Sustainable Packaging": "Policy",
+    "Policy Environmental Supply Chain": "Policy",
+    "Policy Environmental Supply Chain Management": "Policy",
+    "Policy Pollution": "Policy",
+    "Policy Waste": "Policy",
+    "Policy Emissions": "Policy",
+    "Policy Nuclear Safety": "Policy",
+    "Internal Carbon Pricing": "Policy",
+}
+
+def map_attribute(attr):
+    val = target_attributes.get(attr, None)
+    if val in ["Energie", "Wasser", "Abfall", "Emissionen", "Target", "Policy"]:
+        return val, "Operativ"
+    else:
+        return None, "Operativ"
+
+df_all[["Kategorie", "Datentyp"]] = df_all["Attribute"].apply(lambda x: pd.Series(map_attribute(x)))
+
+df_final_filtered = df_all[df_all["Attribute"].isin(target_attributes)]
+
+# Optional: gefilterte Datei separat speichern
+filtered_output_path = r"C:/Users/peich/Documents/TH-Köln/Vorlesung/Semester 5/ABA/Prüfung/Tabellen/ESG_Filtered_Analysis.xlsx"
+df_final_filtered.to_excel(filtered_output_path, index=False)
+print(f"✅ Filtered Data saved to: {filtered_output_path}")
+
+
 # ERGEBNISSE SPEICHERN
 df_all.to_excel(output_path, index=False)
 
@@ -98,4 +193,4 @@ print(f"\n✅ Bereinigte und transformierte Datei: {output_path}")
 print(f"✅ Analyse-Report: {report_file}")
 
 if os.path.exists(output_path):
-    os.startfile(output_path)
+    os.startfile(output_path))
