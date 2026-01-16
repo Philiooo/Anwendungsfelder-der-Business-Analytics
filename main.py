@@ -74,46 +74,28 @@ outliers = df_all[df_all["Outlier"] == True]
 
 # Filtern der bestimmten Attribute
 target_attributes = {
-    # Energie
-    "Total Energy Use / Million in Revenue $": "Energie",
-    "Energy Use Total": "Energie",
-    "Electricity Purchased": "Energie",
-    "Electricity Produced": "Energie",
-    "Renewable Energy Use Ratio": "Energie",
-    "Total Renewable Energy": "Energie",
-    "Renewable Energy Purchased": "Energie",
-    "Renewable Energy Produced": "Energie",
-    "Renewable Energy Use": "Energie",
+    #Overall ESG
+    "ESG Combined Score": "Overall ESG",
+    "Emission (Weight 3.1%)": "Overall ESG",
+    "Environmental Pillar Score (Weight 13.9%)": "Overall ESG",
 
-    # Wasser
-    "Total Water Use / Million in Revenue $": "Wasser",
-    "Water Withdrawal Total": "Wasser",
-    "Water Recycled": "Wasser",
-    "Water Incidents": "Wasser",
-    "Water Use Target": "Wasser",
-    "Water Withdrawal in Stressed Regions": "Wasser",
-    "Water Discharged": "Wasser",
+    #Renewable Energy
+    "Renewable Energy Use Ratio": "Renewable Energy",
+    "Renewable Energy Supply": "Renewable Energy",
+    "Total Renewable Energy To Energy Use in million": "Renewable Energy",
+    "Total Renewable Energy": "Renewable Energy",
+    "Renewable Energy Purchased": "Renewable Energy",
+    "Renewable Energy Produced": "Renewable Energy",
 
-    # Abfall
-    "Accidental Spills To Revenues USD in million": "Abfall",
-    "Accidental Spills": "Abfall",
-    "Waste Recycling Ratio": "Abfall",
-    "Hazardous Waste": "Abfall",
-    "Waste Total": "Abfall",
-    "Total Waste / Million in Revenue $": "Abfall",
-    "Waste Reduction Initiatives": "Abfall",
-    "Waste Recycled To Total Waste": "Abfall",
+    #Environmental Investments
+    "Environmental Investments Initiatives": "Environmental Investments",
+    "Green Capex": "Environmental Investments",
+    "Green Capex Target": "Environmental Investments",
 
-    # Emissionen
-    "Internal Carbon Pricing": "Emissionen",
-    "Emission Reduction Target Percentage": "Emissionen",
-    "Emission Reduction Target Year": "Emissionen",
-    "Estimated CO2 Equivalents Emission Total": "Emissionen",
-    "Total CO2 Emissions / Million in Revenue $": "Emissionen",
-    "CO2 Equivalent Emissions Total": "Emissionen",
-    "CO2 Equivalent Emissions Direct, Scope 1": "Emissionen",
-    "CO2 Equivalent Emissions Indirect, Scope 2": "Emissionen",
-    "CO2 Equivalent Emissions Indirect, Scope 3": "Emissionen",
+    #Sustainable Products
+    "Percentage of Green Products": "Sustainable Products",
+    "Renewable/Clean Energy Products": "Sustainable Products",
+    "Green Revenues Target": "Sustainable Products",
 
     # Target
     "Targets Resource Use": "Target",
@@ -134,20 +116,6 @@ target_attributes = {
     "Targets Waste": "Target",
     "Targets Pollution": "Target",
     "Biodiversity Targets": "Target",
-
-    #Policy
-    "Policy Resource Efficiency": "Policy",
-    "Resource Reduction Policy": "Policy",
-    "Policy Water Efficiency": "Policy",
-    "Policy Energy Efficiency": "Policy",
-    "Policy Sustainable Packaging": "Policy",
-    "Policy Environmental Supply Chain": "Policy",
-    "Policy Environmental Supply Chain Management": "Policy",
-    "Policy Pollution": "Policy",
-    "Policy Waste": "Policy",
-    "Policy Emissions": "Policy",
-    "Policy Nuclear Safety": "Policy",
-    "Internal Carbon Pricing": "Policy",
 }
 
 def map_attribute(attr):
