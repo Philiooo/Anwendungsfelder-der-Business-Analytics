@@ -48,8 +48,5 @@ Eine hohe Recyclingquote bei gleichzeitig stabilem oder steigendem Abfallaufkomm
 <br>
 
 ## 🌍Emissionen - Ziele vs. Realität  
-E.ON verpflichtet sich zu Emissionsreduktionszielen und berichtet über Fortschritte beim Klimaschutz.  
-Die Analyse zeigt jedoch, dass insbesondere indirekte Emissionen (Scope 3) weiterhin einen erheblichen Anteil an den Gesamtemissionen ausmachen.  
-
-Zudem bestehen Abweichungen zwischen kommunizierten Reduktionszielen und der tatsächlichen Emissionsentwicklung.  
+ 
 
