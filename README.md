@@ -8,8 +8,7 @@ in den Bereichen Energie, Wasser, Abfall und Emissionen überein?
 
 <br>  
 
-E.ON kommuniziert ambitionierte Umweltziele und Nachhaltigkeitsmaßnahmen.  
-Dieses Dashboard untersucht, ob diese Aussagen durch messbare Umweltleistungen gestützt werden oder ob Diskrepanzen auf Greenwashing hindeuten.  
+Ziel der Analyse ist die Untersuchung der Umweltperformance der E.ON SE in den Bereichen Energie, Wasser, Abfall und Treibhausgasemissionen auf Basis veröffentlichter ESG-  Kennzahlen. Dabei wird geprüft, inwieweit die kommunizierten Nachhaltigkeitsmaßnahmen und Zielsetzungen mit der tatsächlichen operativen Umweltleistung übereinstimmen.  Abweichungen zwischen Kommunikation und messbaren Ergebnissen werden als mögliche Indikatoren für Greenwashing interpretiert.   
 
 <br>
 
