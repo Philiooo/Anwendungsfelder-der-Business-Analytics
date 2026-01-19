@@ -48,5 +48,10 @@ Eine hohe Recyclingquote bei gleichzeitig stabilem oder steigendem Abfallaufkomm
 <br>
 
 ## 🌍Emissionen - Ziele vs. Realität  
- 
+Die Daten zu den CO₂-Emissionen zeigen über die Jahre hinweg einen deutlichen Rückgang der CO₂-Emissionen Total, insbesondere ab etwa 2015. Während die direkten Emissionen (Scope 1, blau) und indirekten Emissionen durch Energiebezug (Scope 2, dunkelblau) über die Jahre relativ gering bleiben, dominieren die Scope 3 Emissionen (orange) die Gesamtemissionen und zeigen teils starke Schwankungen zwischen den Jahren.  
+
+Parallel dazu zeigt der Vergleich mit dem Emission Reduction Target Percentage (rosa) eine deutliche Diskrepanz: Die Zielvorgaben für Emissionsreduktion liegen teilweise deutlich über den realisierten Reduktionen, insbesondere in den letzten Jahren, obwohl die Gesamtwerte stark gesunken sind.  
+
+Einordnung:
+Die Emissionsreduktion erfolgt primär über strukturelle oder operative Maßnahmen, die sich auf Scope 1 und 2 auswirken, während Scope 3 als indirekter Faktor weiterhin den größten Teil der Gesamtbilanz ausmacht. Die Ziele der Emissionsreduktion werden teilweise nicht vollständig erreicht, was auf die Komplexität der Scope 3-Emissionen und die Abhängigkeit von externen Faktoren hinweist.  
 
