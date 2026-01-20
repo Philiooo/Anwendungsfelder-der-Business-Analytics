@@ -93,6 +93,7 @@ target_attributes = {
     "Water Use Target": "Wasser",
     "Water Withdrawal in Stressed Regions": "Wasser",
     "Water Discharged": "Wasser",
+    "Fresh Water Withdrawal Total": "Wasser",
 
     # Abfall
     "Accidental Spills To Revenues USD in million": "Abfall",
